@@ -1,37 +1,23 @@
-"use client"; // This is a client component 👈🏽
+"use client";
+import MultiSelectItem from "@/components/forms/MultiSelectItem";
+import CatSelectItem from "@/components/forms/SingleErrorSelect";
+import BlueSlider from "@/components/Slider/BlueSlider";
+import { Button, NextUIProvider } from "@nextui-org/react";
 
-import React, { useState } from "react";
-import {NextUIProvider, Select, SelectItem} from "@nextui-org/react";
-import {animals} from "./data";
+ // This is a client component 👈🏽
+
+
 
 export default function Home() {
-  const [values, setValues] = useState(new Set([]));
-  // const [animals, setAnimals] = useState(animals);
-
-  const handleSelectionChange = (e) => {
-    setValues(new Set(e.target.value.split(",")));
-  };
+  
 
   return (
     <NextUIProvider>
 
-      <div className="flex w-full max-w-xs flex-col gap-2">
-        <Select
-          label="Favorite Animal"
-          selectionMode="multiple"
-          placeholder="Select an animal"
-          selectedKeys={values}
-          className="max-w-xs"
-          onChange={handleSelectionChange}
-        >
-          {animals.map((animal) => (
-            <SelectItem key={animal.key}>
-              {animal.label}
-            </SelectItem>
-          ))}
-        </Select>
-        <p className="text-small text-default-500">Selected: {Array.from(values).join(", ")}</p>
-      </div>      
+      <CatSelectItem />
+      <MultiSelectItem />
+      <BlueSlider />
+      <Button>Press me</Button>
     </NextUIProvider>
   );
 }
