@@ -19,7 +19,7 @@ function MultiSelectItem() {
 
   useEffect(() => {
     getMakes(`https://api.vroomhive.co.za/api/v1/makes/`)
-  })
+  }, [])
 
   const handleSelectionChange = (e) => {
     setValues(new Set(e.target.value.split(",")));
