@@ -1,4 +1,5 @@
 "use client";
+import MainAccordion from "@/components/accordion/MainAccordion";
 import MultiSelectItem from "@/components/forms/MultiSelectItem";
 import CatSelectItem from "@/components/forms/SingleErrorSelect";
 import BlueSlider from "@/components/Slider/BlueSlider";
@@ -20,6 +21,7 @@ export default function Home() {
       <BlueSlider />
       <CurrencyLabeledSlider />
       <Button>Press me</Button>
+      <MainAccordion />
     </NextUIProvider>
   );
 }
