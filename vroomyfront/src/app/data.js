@@ -1,16 +1,16 @@
 import React from "react";
 export const animals = [
-  {key: "cat", label: "Cat"},
-  {key: "dog", label: "Dog"},
-  {key: "elephant", label: "Elephant"},
-  {key: "lion", label: "Lion"},
-  {key: "tiger", label: "Tiger"},
-  {key: "giraffe", label: "Giraffe"},
-  {key: "dolphin", label: "Dolphin"},
-  {key: "penguin", label: "Penguin"},
-  {key: "zebra", label: "Zebra"},
-  {key: "shark", label: "Shark"},
-  {key: "whale", label: "Whale"},
-  {key: "otter", label: "Otter"},
-  {key: "crocodile", label: "Crocodile"}
+  {id: "cat", name: "Cat"},
+  {id: "dog", name: "Dog"},
+  {id: "elephant", name: "Elephant"},
+  {id: "lion", name: "Lion"},
+  {id: "tiger", name: "Tiger"},
+  {id: "giraffe", name: "Giraffe"},
+  {id: "dolphin", name: "Dolphin"},
+  {id: "penguin", name: "Penguin"},
+  {id: "zebra", name: "Zebra"},
+  {id: "shark", name: "Shark"},
+  {id: "whale", name: "Whale"},
+  {id: "otter", name: "Otter"},
+  {id: "crocodile", name: "Crocodile"}
 ];
